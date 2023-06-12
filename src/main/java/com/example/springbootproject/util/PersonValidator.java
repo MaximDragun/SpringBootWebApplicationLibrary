@@ -9,12 +9,12 @@ import org.springframework.validation.Validator;
 
 
 @Component
-public class PErsonValidator implements Validator {
+public class PersonValidator implements Validator {
     private final PeopleService peopleService;
 
 
     @Autowired
-    public PErsonValidator(PeopleService peopleService) {
+    public PersonValidator(PeopleService peopleService) {
         this.peopleService = peopleService;
     }
 

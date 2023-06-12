@@ -1,9 +1,12 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
+!../../TgBot/smartBot/new/.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-
+../../TgBot/smartBot/new/.mvn/
+../../TgBot/smartBot/new/.mvn
+../../TgBot/smartBot/new/mvnw
+../../TgBot/smartBot/new/mvnw.cmd
 ### STS ###
 .apt_generated
 .classpath

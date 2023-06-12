@@ -3,7 +3,7 @@ package com.example.springbootproject.controllers;
 import com.example.springbootproject.models.Person;
 import com.example.springbootproject.services.BooksService;
 import com.example.springbootproject.services.PeopleService;
-import com.example.springbootproject.util.PErsonValidator;
+import com.example.springbootproject.util.PersonValidator;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.*;
 public class PeopleController {
 
     private final PeopleService peopleService;
-    private final PErsonValidator pErsonValidator;
+    private final PersonValidator pErsonValidator;
     private final BooksService booksService;
 
 
     @Autowired
-    public PeopleController(PeopleService peopleService, PErsonValidator pErsonValidator, BooksService booksService) {
+    public PeopleController(PeopleService peopleService, PersonValidator pErsonValidator, BooksService booksService) {
         this.peopleService = peopleService;
         this.pErsonValidator = pErsonValidator;
         this.booksService = booksService;
